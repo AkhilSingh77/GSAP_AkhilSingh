@@ -98,7 +98,7 @@ h3, h1, h2 {
   }
 }
 .mainwrapper .nav__left--1 {
-  color: rgb(223, 222, 222);
+  color: rgb(194, 194, 194);
 }
 .mainwrapper .nav__left--1 .arrow {
   transform: rotate(30deg);
@@ -144,9 +144,15 @@ h3, h1, h2 {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 3.125rem;
+  gap: 3.75rem;
+  font-size: 1.25rem;
 }
 .mainwrapper .intro__part1 .projectDate {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0.3125rem;
   color: #adadad;
 }
 .mainwrapper .intro__part1 .projectDate .date {
@@ -566,11 +572,11 @@ h3, h1, h2 {
 .mainwrapper .section3--details {
   color: #fff;
   position: absolute;
-  width: 500px;
-  font-size: 1.5625rem;
+  width: 700px;
+  font-size: 1.875rem;
   bottom: 5%;
   z-index: 100;
-  left: 3%;
+  left: 10%;
   transform: translateY(200px);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -671,12 +677,13 @@ h3, h1, h2 {
 .mainwrapper .section7--image7 {
   height: auto;
   color: #575757;
-  font-size: clamp(1rem, 3vw, 1.75rem);
+  font-size: clamp(1rem, 4vw, 2.2rem);
   filter: none !important;
   transform: translate(-768px, -0.2px);
   position: absolute;
-  bottom: 40%;
-  width: 30vw;
+  bottom: 50%;
+  width: 45vw;
+  line-height: 1.1;
   max-width: 800px;
   left: 100vw;
 }
@@ -795,7 +802,7 @@ h3, h1, h2 {
   transform: translate(258px, 458px);
 }
 .mainwrapper .section5__image--16 {
-  background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/30.jpg);
+  background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/27.jpg);
   transform: translate(773px, 458px);
 }
 .mainwrapper .section5 .section5--caption {

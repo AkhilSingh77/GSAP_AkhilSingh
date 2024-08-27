@@ -81,12 +81,13 @@
      
 
       color: $color-text-alt;
-      font-size: clamp(1rem, 3vw, 1.75rem);
+      font-size: clamp(1rem, 4vw, 2.2rem);
       filter: none !important;
       transform: translate(-768px, -0.2px);
       position: absolute;
-      bottom: 40%;
-      width: 30vw;
+      bottom: 50%;
+      width: 45vw;
+      line-height: 1.1;
       max-width: 800px;
       left: 100vw;
     }

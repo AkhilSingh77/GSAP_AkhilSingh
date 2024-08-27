@@ -19,9 +19,10 @@
         gap: pxtorem(30px);
       }
       &--1 {
-        color: rgb(223, 222, 222);
+        color: rgb(194, 194, 194);
         .arrow {
           transform: rotate(30deg);
+     
 
           i {
             color: $color-link;
@@ -56,8 +57,11 @@
     }
     &__part1 {
       @include flexRow();
-      gap: pxtorem(50px);
+      gap: pxtorem(60px);
+      font-size: pxtorem(20px);
       .projectDate {
+        @include flexColumn();
+        gap:pxtorem(5px);
         color: $color-label;
         .date {
           text-align: right;

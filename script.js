@@ -21,7 +21,7 @@ gsap.to(".section1--image4", {
 
 gsap.fromTo(
   ".section1--details",
-  { y: 200, opacity: 0 },
+  { y: 1800, opacity: 0 },
   {
     y: 0,
     opacity: 1,
@@ -30,8 +30,7 @@ gsap.fromTo(
       trigger: ".section1",
       scroller: "body",
       start: "top 0%",
-      scrub: true,
-    
+      scrub: 2,
     },
   }
 );
@@ -64,14 +63,14 @@ gsap.from(".section3--item", {
     end: "+10000",
     scrub: 0.3,
     pin: true,
-   
+
     immediateRender: false,
   },
 });
 
 gsap.fromTo(
   ".section3--details",
-  { y: 200, opacity: 0 },
+  { y: 1800, opacity: 0 },
   {
     y: 0,
     opacity: 1,
@@ -80,7 +79,7 @@ gsap.fromTo(
       trigger: ".section3",
       scroller: "body",
       start: "top 0%",
-      scrub: true,
+      scrub: 1,
       // markers: true,
     },
   }
@@ -109,7 +108,7 @@ gsap.to(
 
 gsap.fromTo(
   ".section5--caption",
-  { y: 300, opacity: 0 },
+  { y: 1800, opacity: 0 },
   {
     y: 0,
     opacity: 1,
@@ -137,7 +136,7 @@ gsap.from(".section7--images", {
     // end:"+10000",
     scrub: 1,
     pin: true,
-    
+
     immediateRender: false,
   },
 });
@@ -145,7 +144,7 @@ gsap.from(".section7--images", {
 gsap.to(".section10--image", {
   transform: "scale(0.25, 0.25)",
   filter: "brightness(0.7) hue-rotate(0deg)",
- 
+
   scrollTrigger: {
     trigger: ".section10",
     scroller: "body",
@@ -154,14 +153,14 @@ gsap.to(".section10--image", {
     end: "+25000",
     scrub: true,
     pin: true,
-  
+
     immediateRender: false,
   },
 });
 
 gsap.fromTo(
   ".section10--caption",
-  { y: 300, opacity: 0 },
+  { y: 1800, opacity: 0 },
   {
     y: 0,
     opacity: 1,
@@ -170,8 +169,7 @@ gsap.fromTo(
       trigger: ".section10",
       scroller: "body",
       start: "top 0%",
-      scrub: 5,
-    
+      scrub: 3,
     },
   }
 );
