@@ -1,0 +1,35 @@
+@import "boilerplate";
+@import "colors";
+@import "function";
+@import "mixin";
+.mainwrapper {
+  .section10 {
+    position: relative;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    position: relative;
+    &--image {
+      background-image: url("https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/70.jpg");
+     
+      opacity: 1;
+      transform: translate(0px, 0px) scale(0.9989, 0.9989);
+      filter: brightness(1) hue-rotate(90deg);
+      width: 400%;
+      height: 400%;
+
+      background-position: 50% 50%;
+      background-size: cover;
+      border-radius: 6px;
+      position: relative;
+    }
+    &--caption {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      position: absolute;
+      bottom: 40%;
+      font-weight: 500;
+      color: $color-text;
+    }
+  }
+}

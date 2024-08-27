@@ -1,0 +1,105 @@
+@import "boilerplate";
+@import "colors";
+@import "function";
+@import "mixin";
+
+.mainwrapper{
+  .section5{
+    height: 100vh;
+    position: relative;
+
+    &__image{
+      opacity: 1;
+      filter: brightness(1);
+      max-width: 300px;
+      max-height: 351.2px;
+      min-width: 103.3px;
+      min-height: 127.2px;
+      background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+     
+      position: absolute;
+      border-radius: 6px;
+  
+      top: 0px;
+      left: 0px;
+      padding: 0px;
+      &--1 {
+        background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/16.jpg);
+        transform: translate(0px, 0px);
+      }
+      &--2 {
+        background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/17.jpg);
+        transform: translate(129px, 0px);
+      }
+      &--3 {
+        background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/18.jpg);
+        transform: translate(387px, 0px);
+      }
+      &--4 {
+        background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/19.jpg);
+        transform: translate(516px, 0px);
+      }
+      &--5 {
+        background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/20.jpg);
+        transform: translate(644px, 305px);
+      }
+      &--6 {
+        background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/21.jpg);
+        transform: translate(773px, 0px);
+      }
+      &--7 {
+        background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/22.jpg);
+        transform: translate(1031px, 0px);
+      }
+      &--8 {
+        background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/23.jpg);
+        transform: translate(1160px, 305px);
+      }
+      &--9 {
+        background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/24.jpg);
+        transform: translate(902px, 153px);
+      }
+      &--10 {
+        background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/25.jpg);
+        transform: translate(1031px, 458px);
+      }
+      &--11 {
+        background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/26.jpg);
+        transform: translate(902px, 305px);
+      }
+      &--12 {
+        background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/27.jpg);
+        transform: translate(129px, 153px);
+      }
+      &--13 {
+        background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/28.jpg);
+        transform: translate(0px, 305px);
+      }
+      &--14 {
+        background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/29.jpg);
+        transform: translate(387px, 305px);
+      }
+      &--15 {
+        background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/30.jpg);
+        transform: translate(258px, 458px);
+      }
+      &--16 {
+        background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/30.jpg);
+        transform: translate(773px, 458px);
+      }
+    }
+   
+      .section5--caption{
+        font-size: clamp(2rem, 8vw, 6rem);
+        text-wrap: nowrap;
+        color: $color-text;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+  }
+
+}

@@ -1,0 +1,111 @@
+@import "boilerplate";
+@import "colors";
+@import "function";
+@import "mixin";
+
+
+.mainwrapper{
+  .section1{
+    @include paddingLeftRightSame(4px);
+
+    max-height: 664px;
+    height: 620px;
+    margin-top: 30vh;
+    position: relative;
+    @include flexRow(center , center);
+        gap: 2rem;
+        & > div {
+          flex-shrink: 0;
+          transition: width 0.3s ease, height 0.3s ease;  
+        }
+   &--image1{
+  
+    width: 78.1px;
+    height: 117.1px;
+    border-radius: 6px;
+    background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/6.jpg);
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+   }
+   &--image2{
+    width: 97.5706px;
+    height: 146.356px;
+    border-radius: 6px;
+    background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/3.jpg);
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+   }
+   &--image3{
+    width: 195.1px;
+    height: 292.7px;
+    border-radius: 6px;
+    background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/4.jpg);
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+   }
+   &--image4{
+    position: relative;
+ 
+    transition: background-color 0.3s ease;
+    width: 292.7px;
+    height: 439px;
+    background-image: url(	https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/1.jpg);
+    background-size: cover;
+    border-radius: 6px;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  filter: brightness(1);
+
+   }
+   
+   &--image5{
+    width: 195.1px;
+    height: 292.7px;
+    background-image: url(	https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/5.jpg);
+    background-size: cover;
+    border-radius: 6px;
+  background-position: center;
+  background-repeat: no-repeat;
+   }
+   &--image6{
+    width: 97.5706px;
+    height: 146.356px;
+    border-radius: 6px;
+    background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/2.jpg);
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+   };
+   
+   &--image7{
+    width: 78.1px;
+    height: 117.1px;
+    border-radius: 6px;
+    background-image: url(	https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/6.jpg);
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+   }
+  
+   &--details{
+    color: $color-text;
+    position: absolute;
+    width: 500px;
+
+    font-size: pxtorem(28px);
+    bottom: 15%;
+    
+    z-index: 100;
+    left: 3%;
+ 
+    transform: translateY(200px); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  
+   }
+  
+  }
+}

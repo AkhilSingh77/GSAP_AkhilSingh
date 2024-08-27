@@ -1,0 +1,98 @@
+@import "boilerplate";
+@import "colors";
+@import "function";
+@import "mixin";
+.mainwrapper {
+  .nav {
+    @include flexColumn();
+    padding: pxtorem(15px);
+    gap: pxtorem(7px);
+    @media (min-width: 850px) {
+      @include flexRow(space-between, center);
+      gap: 0;
+    }
+    &__left {
+      @include flexColumn();
+      gap: pxtorem(7px);
+      @media (min-width: 850px) {
+        @include flexRow();
+        gap: pxtorem(30px);
+      }
+      &--1 {
+        color: rgb(223, 222, 222);
+        .arrow {
+          transform: rotate(30deg);
+
+          i {
+            color: $color-link;
+          }
+        }
+      }
+      &--2 {
+        text-decoration: underline;
+        color: $color-link;
+      }
+    }
+    &__right {
+      @include flexColumn();
+      color: $color-link;
+      text-decoration: underline;
+      padding-right: pxtorem(30px);
+      font-size: pxtorem(15px);
+    }
+  }
+
+  .intro {
+    width: 100%;
+    @include paddingLeftRightSame(15px);
+    margin: 0 auto;
+    margin-top: pxtorem(120px);
+
+    @include flexColumn();
+    gap: pxtorem(60px);
+    @media (min-width: 900px) {
+      @include paddingLeftRightSame(0px);
+      width: 70%;
+    }
+    &__part1 {
+      @include flexRow();
+      gap: pxtorem(50px);
+      .projectDate {
+        color: $color-label;
+        .date {
+          text-align: right;
+        }
+      }
+      .aiDate {
+        color: $color-text;
+      }
+    }
+    &--heading {
+      @include flexColumn();
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      line-height: 1;
+      font-size: clamp(2rem, 14vw, 8rem);
+      letter-spacing: pxtorem(3px);
+      color: $color-text;
+    }
+    &__bottom {
+      @include flexColumn();
+      gap: pxtorem(3px);
+      @media (min-width: 850px) {
+        @include flexRow();
+        gap: pxtorem(30px);
+      }
+      .mission {
+        margin-right: pxtorem(10px);
+        font-size: pxtorem(17px);
+        margin-top: -2px;
+        color: $color-label;
+      }
+      .defination1,
+      .defination2 {
+        color: $color-text-alt;
+      }
+    }
+  }
+}
