@@ -1,0 +1,45 @@
+@import "boilerplate";
+@import "colors";
+@import "function";
+@import "mixin";
+
+
+.mainwrapper{
+  .section6 {
+    margin-top: pxtorem(220px);
+    margin-bottom: pxtorem(200px);
+
+    @include flexColumn();
+    gap: pxtorem(5px);
+
+    margin-left: 15px;
+    margin-right: 0px;
+    width: 55%;
+    @media (min-width: 850px) {
+      margin-left: auto;
+      margin-right: auto;
+      gap: pxtorem(90px);
+      @include flexRow();
+      @include paddingLeftRightSame(0px);
+
+      width: 65%;
+    }
+    @media (min-width: 1000px) {
+      @include paddingLeftRightSame(0px);
+
+      width: 55%;
+    }
+    &--Preserving {
+      font-size: pxtorem(20px);
+      color: $color-label;
+      text-wrap: nowrap;
+      font-weight: 400;
+    }
+    &--details {
+      font-size: pxtorem(18px);
+      line-height: 1.4;
+
+      color: $color-text-alt;
+    }
+  }
+}

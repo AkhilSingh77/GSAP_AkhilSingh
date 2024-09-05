@@ -101,7 +101,7 @@ gsap.to(
       pin: true,
 
       scrub: true,
-      markers: true,
+    
     },
   }
 );

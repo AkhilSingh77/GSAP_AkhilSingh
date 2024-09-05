@@ -1,0 +1,27 @@
+@import "boilerplate";
+@import "colors";
+@import "function";
+@import "mixin";
+
+
+.mainwrapper{
+
+
+  .section11 {
+    &__parg {
+      font-size: pxtorem(20px);
+      max-width: pxtorem(400px);
+      margin-top: pxtorem(200px);
+      margin-bottom: pxtorem(200px);
+      margin-left: pxtorem(15px);
+      width: fit-content;
+      color: $color-text-alt;
+      @media (min-width: 800px) {
+        margin-left: pxtorem(200px);
+      }
+      &--span {
+        color: $color-link;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import "boilerplate";
+@import "colors";
+@import "function";
+@import "mixin";
+
+
+.mainwrapper{
+  .section2 {
+    margin-top: pxtorem(220px);
+    margin-bottom: pxtorem(200px);
+    width: 80%;
+    @include flexRow();
+    gap: pxtorem(90px);
+    margin-left: pxtorem(15px);
+    @media (min-width: 846px) {
+      gap: pxtorem(9px);
+      @include flexColumn();
+    }
+    @media (min-width: 1000px) {
+      @include paddingLeftRightSame(0px);
+      margin-left: pxtorem(150px);
+      width: 50%;
+    }
+    &--ethical {
+      font-size: pxtorem(20px);
+      color: $color-label;
+      text-wrap: nowrap;
+      font-weight: 400;
+    }
+    &--details {
+      font-size: pxtorem(18px);
+      line-height: 1.4;
+
+      color: $color-text-alt;
+    }
+  }
+}

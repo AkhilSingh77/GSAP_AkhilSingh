@@ -5,12 +5,18 @@
 
 @import "scss-components/navIntro";
 @import "scss-components/preloader";
-@import "scss-components/rightPart";
+
 @import "scss-components/section1";
 @import "scss-components/section10";
 @import "scss-components/section3";
 @import "scss-components/section7";
 @import "scss-components/section5";
+@import "scss-components/section2";
+@import "scss-components/section4";
+@import "scss-components/section6";
+@import "scss-components/section8";
+@import "scss-components/section11";
+
 
 
 
@@ -22,160 +28,6 @@ body {
 .mainwrapper {
   overflow: hidden;
 
-  .section2 {
-    margin-top: pxtorem(220px);
-    margin-bottom: pxtorem(200px);
-    width: 80%;
-    @include flexRow();
-    gap: pxtorem(90px);
-    margin-left: pxtorem(15px);
-    @media (min-width: 846px) {
-      gap: pxtorem(9px);
-      @include flexColumn();
-    }
-    @media (min-width: 1000px) {
-      @include paddingLeftRightSame(0px);
-      margin-left: pxtorem(150px);
-      width: 50%;
-    }
-    &--ethical {
-      font-size: pxtorem(20px);
-      color: $color-label;
-      text-wrap: nowrap;
-      font-weight: 400;
-    }
-    &--details {
-      font-size: pxtorem(18px);
-      line-height: 1.4;
-
-      color: $color-text-alt;
-    }
-  }
-
-  .section4 {
-
-    margin-top: pxtorem(220px);
-    margin-bottom: pxtorem(200px);
-
-    @include flexColumn();
-    gap: pxtorem(5px);
-    margin-left: pxtorem(15px);
-    width: 55%;
-    @media (min-width: 850px) {
-      gap: pxtorem(90px);
-      @include flexRow();
-      @include paddingLeftRightSame(0px);
-      margin-left: 27vw;
-      width: 65%;
-    }
-    @media (min-width: 1000px) {
-      @include paddingLeftRightSame(0px);
-      margin-left: 35vw;
-      width: 55%;
-    }
-    &--Preserving {
-      font-size: pxtorem(20px);
-      color: $color-label;
-      text-wrap: nowrap;
-      font-weight: 400;
-    }
-    &--details {
-      font-size: pxtorem(18px);
-      line-height: 1.4;
-
-      color: $color-text-alt;
-    }
-  }
-
-  .section6 {
-    margin-top: pxtorem(220px);
-    margin-bottom: pxtorem(200px);
-
-    @include flexColumn();
-    gap: pxtorem(5px);
-
-    margin-left: 15px;
-    margin-right: 0px;
-    width: 55%;
-    @media (min-width: 850px) {
-      margin-left: auto;
-      margin-right: auto;
-      gap: pxtorem(90px);
-      @include flexRow();
-      @include paddingLeftRightSame(0px);
-
-      width: 65%;
-    }
-    @media (min-width: 1000px) {
-      @include paddingLeftRightSame(0px);
-
-      width: 55%;
-    }
-    &--Preserving {
-      font-size: pxtorem(20px);
-      color: $color-label;
-      text-wrap: nowrap;
-      font-weight: 400;
-    }
-    &--details {
-      font-size: pxtorem(18px);
-      line-height: 1.4;
-
-      color: $color-text-alt;
-    }
-  }
-
-  .section8 {
-    margin-top: pxtorem(150px);
-    margin-bottom: pxtorem(200px);
-
-    @include flexColumn();
-    gap: pxtorem(5px);
-    margin-left: pxtorem(15px);
-    width: 55%;
-    @media (min-width: 850px) {
-      gap: pxtorem(90px);
-      @include flexRow();
-      @include paddingLeftRightSame(0px);
-      margin-left: 27vw;
-      width: 65%;
-    }
-    @media (min-width: 1000px) {
-      @include paddingLeftRightSame(0px);
-      margin-left: 30vw;
-      width: 60%;
-    }
-    &--Preserving {
-      font-size: pxtorem(20px);
-      color: $color-label;
-      text-wrap: nowrap;
-      font-weight: 400;
-    }
-    &--details {
-      font-size: pxtorem(19px);
-      line-height: 1.3;
-
-      color: $color-text-alt;
-    }
-  }
-
-  .section11 {
-    &__parg {
-      font-size: pxtorem(20px);
-      max-width: pxtorem(400px);
-      margin-top: pxtorem(200px);
-      margin-bottom: pxtorem(200px);
-      margin-left: pxtorem(15px);
-      width: fit-content;
-      color: $color-text-alt;
-      @media (min-width: 800px) {
-        margin-left: pxtorem(200px);
-      }
-      &--span {
-        color: $color-link;
-      }
-    }
-  }
 }
 
 .preloader-display-none {
