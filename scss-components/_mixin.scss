@@ -1,4 +1,4 @@
-@import "function";
+
 
 @mixin paddingLeftRightSame($value){
   padding-left: pxtorem( $value);

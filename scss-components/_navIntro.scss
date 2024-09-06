@@ -1,7 +1,4 @@
-@import "boilerplate";
-@import "colors";
-@import "function";
-@import "mixin";
+
 .mainwrapper {
   .nav {
     @include flexColumn();
