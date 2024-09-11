@@ -22,13 +22,15 @@
       top: 0px;
       left: 0px;
       padding: 0px;
+ 
       &--1 {
         background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/16.jpg);
         transform: translate(0px, 0px);
       }
       &--2 {
         background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/17.jpg);
-        transform: translate(129px, 0px);
+        transform: translate(219px, 0px);
+     
       }
       &--3 {
         background-image: url(https://tympanus.net/Development/ScrollBasedLayoutAnimations/img/18.jpg);

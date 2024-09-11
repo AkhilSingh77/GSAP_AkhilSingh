@@ -10,7 +10,7 @@
     @include flexColumn();
     gap: pxtorem(5px);
     margin-left: pxtorem(15px);
-    width: 55%;
+    width: 95%;
     @media (min-width: 850px) {
       gap: pxtorem(90px);
       @include flexRow();

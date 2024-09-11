@@ -4,6 +4,10 @@
 
 
   .section11 {
+    margin-top: pxtorem(400px);
+    @media (min-width: 500px) {
+      margin-top:0px;
+    }
     &__parg {
       font-size: pxtorem(20px);
       max-width: pxtorem(400px);

@@ -6,12 +6,12 @@
     margin-top: pxtorem(220px);
     margin-bottom: pxtorem(200px);
     width: 80%;
-    @include flexRow();
+    @include flexColumn();
     gap: pxtorem(90px);
     margin-left: pxtorem(15px);
     @media (min-width: 846px) {
-      gap: pxtorem(9px);
-      @include flexColumn();
+      gap: pxtorem(80px);
+      @include flexRow();
     }
     @media (min-width: 1000px) {
       @include paddingLeftRightSame(0px);

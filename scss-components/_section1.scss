@@ -7,13 +7,16 @@
 
     max-height: 664px;
     height: 620px;
-    margin-top: 30vh;
+    margin-top: 120px ;// this not working i dont know why
     position: relative;
     @include flexRow(center , center);
         gap: 2rem;
         & > div {
           flex-shrink: 0;
           transition: width 0.3s ease, height 0.3s ease;  
+        }
+        @media (min-width:500px) {
+          margin-top: 30vh;
         }
    &--image1{
   
@@ -91,7 +94,7 @@
    &--details{
     color: $color-text;
     position: absolute;
-    width: 500px;
+    width: 400px;
 
     font-size: pxtorem(28px);
     bottom: 15%;
@@ -101,6 +104,10 @@
  
     transform: translateY(200px); 
     transition: opacity 0.3s ease, transform 0.3s ease;
+    @media (min-width:500px) {
+      width: 
+      pxtorem(500px);
+    }
   
    }
   

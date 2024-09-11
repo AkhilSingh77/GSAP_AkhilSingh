@@ -3,20 +3,45 @@ window.addEventListener("load", function () {
   preloader.classList.add("preloader-display-none");
 });
 
-gsap.to(".section1--image4", {
-  width: "100vw",
-  height: "100vh",
-  filter: "brightness(0.5)",
 
-  scrollTrigger: {
-    trigger: ".section1",
-    scroller: "body",
-    start: "top top",
-    end: "+4000",
-    scrub: 0.3,
-    pin: true,
-    immediateRender: false,
-  },
+
+gsap.matchMedia().add("(min-width: 768px)", () => {
+
+  gsap.to(".section1--image4", {
+    width: "100vw",
+    height: "100vh",
+    filter: "brightness(0.5)",
+  
+    scrollTrigger: {
+      trigger: ".section1",
+      scroller: "body",
+      start: "top top",
+      end: "+4000",
+      scrub: 0.3,
+      pin: true,
+      immediateRender: false,
+    },
+  });
+});
+
+gsap.matchMedia().add("(max-width: 765px)", () => {
+
+  gsap.to(".section1--image4", {
+    width: "1280px",
+    height: "100vh",
+    filter: "brightness(0.5)",
+  
+  
+    scrollTrigger: {
+      trigger: ".section1",
+      scroller: "body",
+      start: "top top",
+      end: "+4000",
+      scrub: 0.3,
+      pin: true,
+      immediateRender: false,
+    },
+  });
 });
 
 gsap.fromTo(
@@ -67,6 +92,45 @@ gsap.from(".section3--item", {
     immediateRender: false,
   },
 });
+
+
+// gsap.matchMedia().add("(min-width: 768px)", () => {
+
+//   gsap.from(".section3--item", {
+//     transform: " translate(0px,0px) scale(1,1)",
+//     filter: "brightness(1)",
+  
+//     scrollTrigger: {
+//       trigger: ".section3",
+//       scroller: "body",
+//       start: "top top",
+//       end: "+10000",
+//       scrub: 0.3,
+//       pin: true,
+  
+//       immediateRender: false,
+//     },
+//   });
+// });
+
+// gsap.matchMedia().add("(max-width: 765px)", () => {
+
+//   gsap.from(".section3--item", {
+//     transform: " translate(0px,0px) scale(1.9046,1.9046)",
+//     filter: "brightness(1)",
+  
+//     scrollTrigger: {
+//       trigger: ".section3",
+//       scroller: "body",
+//       start: "top top",
+//       end: "+10000",
+//       scrub: 0.3,
+//       pin: true,
+  
+//       immediateRender: false,
+//     },
+//   });
+// });
 
 gsap.fromTo(
   ".section3--details",

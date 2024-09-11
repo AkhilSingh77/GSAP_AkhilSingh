@@ -91,16 +91,21 @@
     &--details {
       color: $color-text;
       position: absolute;
-      width: 700px;
+      width: 400px;
 
       font-size: pxtorem(30px);
       bottom: 5%;
 
       z-index: 100;
-      left: 10%;
+      left: 5%;
 
       transform: translateY(200px);
       transition: opacity 0.3s ease, transform 0.3s ease;
+
+      @media (min-width: 500px) {
+          width: 700px;
+          left: 10%;
+      }
     }
   }
 }
